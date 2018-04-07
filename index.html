@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration form-1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+
+    <div class="logo">
+        <p>Logo</p>
+    </div>
+
+    <div class="submenu">
+        <div class="dropbtn"> Navigation</div>
+        <div class="submenu-content">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Accessories</a>
+            <a href="#">Contact us</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>Sign up to yourcustomtailor.com</h1>
+        <p>we can't wait to help you improve your life-style and gain the attention from people around <br>you! <br>
+        </p>
+        <p2>Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy <br>picking the best offers that match your preferences and style. Every week we will send you a <br> hand-picked selection- we just need to know a few details
+            about your first....
+        </p2>
+
+        <h2>Step 1/4 - tell us who you are?</h2>
+
+        <p><b>Progress</b></p>
+
+        <div id="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <p>
+            Nice to meet you. Let's spend a minute to get to know each other? Please enter the following:
+        </p>
+
+    </header>
+
+    <form action="step2.html" method="post">
+
+        <label for="firstName"><b>First name*</b></label>
+        <input required type="name" id="firstName">
+
+        <label for="lastName"><b>Last name*</b></label>
+        <input required type="name" id="lastName">
+        <br>
+
+
+        <label for="country"><b>Country*</b></label>
+        <select name="country" id="country">
+                <option value="0" label="Select a country … " selected="selected">Select a country …</option>
+                <option value="AF">Afghanistan</option>
+                <option value="HR" label="Croatia">Croatia</option>
+                <option value="CY" label="Cyprus">Cyprus</option>
+                <option value="CZ" label="Czech Republic">Czech Republic</option>
+                <option value="DK" label="Denmark">Denmark</option>
+                <option value="DD" label="East Germany">East Germany</option>
+                <option value="EE" label="Estonia">Estonia</option>
+                <option value="FO" label="Faroe Islands">Faroe Islands</option>
+                <option value="FI" label="Finland">Finland</option>
+                <option value="FR" label="France">France</option>
+                <option value="DE" label="Germany">Germany</option>
+                <option value="GI" label="Gibraltar">Gibraltar</option>
+                <option value="GR" label="Greece">Greece</option>
+                <option value="GG" label="Guernsey">Guernsey</option>
+                <option value="HU" label="Hungary">Hungary</option>
+                <option value="IS" label="Iceland">Iceland</option>
+        </select>
+        <br>
+
+        <label for="strAdd"><b>Street Address*</b></label>
+        <input required type="address" id="strAdd">
+
+        <label for="pCode"><b>Post Code*</b></label>
+        <input required type="postal" id="pCode" maxlength="4">
+        <br>
+
+        <label for="pro-description"><b>Profile description</b> <span class="description-area"> <br> 
+            please provide a short description of yourself to be displayed on our social community pages.</span></label>
+        <textarea name="pro-description" id="pro-description" cols="121" rows="7" maxlength="500"></textarea>
+        <br>
+
+        <p>Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address<br></p>
+        <label for="shipping"><b>Shipping Address<b></label>
+        <input type="checkbox" id="shipping" checked onclick="myFunction()">
+
+        <div id="shipping-address" style="display: none;">
+            <br>
+            <label><b>Shipping Address</b></label>
+            <br>
+
+            <label for="firstName"><b>First name*</b></label>
+            <input required type="name" id="firstName">
+
+            <label for="lastName" class="lastName"><b>Last name*</b></label>
+            <input required type="name" id="lastName">
+            <br>
+
+            <label for="country"><b>Country*</b></label>
+            <select name="country" id="country">
+                <option value="0" label="Select a country … " selected="selected">Select a country …</option>
+                <option value="AF">Afghanistan</option>
+                <option value="HR" label="Croatia">Croatia</option>
+                <option value="CY" label="Cyprus">Cyprus</option>
+                <option value="CZ" label="Czech Republic">Czech Republic</option>
+                <option value="DK" label="Denmark">Denmark</option>
+                <option value="DD" label="East Germany">East Germany</option>
+                <option value="EE" label="Estonia">Estonia</option>
+                <option value="FO" label="Faroe Islands">Faroe Islands</option>
+                <option value="FI" label="Finland">Finland</option>
+                <option value="FR" label="France">France</option>
+                <option value="DE" label="Germany">Germany</option>
+                <option value="GI" label="Gibraltar">Gibraltar</option>
+                <option value="GR" label="Greece">Greece</option>
+                <option value="GG" label="Guernsey">Guernsey</option>
+                <option value="HU" label="Hungary">Hungary</option>
+                <option value="IS" label="Iceland">Iceland</option>
+            </select>
+            <br>
+
+            <label for="strAdd"><b>Street address*</b></label>
+            <input required type="name" id="strAdd">
+            <label for="pCode"><b>Post code*</b></label>
+            <input required type="number" id="pCode">
+            <br>
+
+        </div>
+        <input type="submit" id="nextStep" value="Next step">
+
+    </form>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("shipping-address");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

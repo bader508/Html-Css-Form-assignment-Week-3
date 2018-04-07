@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration form-2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+
+    <div class="logo">
+        <p>Logo</p>
+    </div>
+
+    <div class="submenu">
+        <div class="dropbtn"> Navigation</div>
+        <div class="submenu-content">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Accessories</a>
+            <a href="#">Contact us</a>
+        </div>
+    </div>
+
+
+    <header>
+        <h1>Sign up to yourcustomtailor.com</h1>
+
+        <h2>Step 2/4 - how can we reach you?</h2>
+
+        <p><b>Progress</b></p>
+
+        <div id="progress-bar">
+            <div class="progress-2"></div>
+        </div>
+        <p>
+            We will probabaly need to stay in touch somehow. Let us know how can we reach you?
+        </p>
+
+    </header>
+
+    <body>
+        <form action="step3.html" method="post">
+            <label for="email"><b>Email*</b></label>
+            <input input id="emailAddress" type="email" placeholder="user@example.gov" size="64" maxlength="256" multiple required>
+            <label for="phone-number"><b>Phone-number*</b></label>
+            <input id="phonenum" type="tel" required>
+            <br>
+
+            <label for="pass1"><b>Password*</b></label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must
+             contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters" required><br>
+
+            <label for="pass2"><b>Re-enter Password*</b></label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Must
+             contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters" required>
+            <p><b>I want to sign up for the newsletter</b></p>
+            <fieldset>
+                <b>Weekly news</b><input type="radio" name="news" id="weeklynews" value="weeklynews">
+                <b>Monthly news</b><input type="radio" name="news" id="monthlynews" value="monthlynews">
+                <b>Don't send me news</b><input type="radio" name="news" id="news" value="news">
+
+            </fieldset>
+            <input type="submit" id="nextStep" value="Next step">
+
+
+
+        </form>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 145px 30px 10px 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.logo {
+    background-color: #d4d6d5;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding: 15px;
+    float: left;
+    border: 1.5px solid darkgrey;
+    margin: 30px;
+}
+
+.logo p {
+    position: relative;
+    top: 10px;
+}
+
+.dropbtn {
+    background-color: #d4d6d5;
+    padding: 25px 140px;
+    border: 1.5px solid darkgrey;
+}
+
+.submenu {
+    float: right;
+    margin: 30px;
+}
+
+.submenu-content {
+    display: none;
+    background-color: #f1f1f1;
+}
+
+.submenu-content a {
+    color: rgb(0, 0, 0);
+    padding: 24px 14px;
+}
+
+.submenu-content a:hover {
+    background-color: #ddd
+}
+
+.submenu:hover .submenu-content {
+    display: flex;
+}
+
+.submenu:hover .dropbtn {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+#progress-bar {
+    border: 1.5px solid darkgrey;
+}
+
+.progress {
+    background-color: rgb(138, 129, 129);
+    width: 23%;
+    height: 40px;
+}
+
+label {
+    text-align: right;
+    padding-left: 25px;
+    width: 12%;
+    display: inline-block;
+}
+
+input {
+    width: 300px;
+    border: 1.5px solid darkgrey;
+    padding: 20px;
+    margin: 25px auto;
+}
+
+select {
+    padding: 20px;
+    width: 25%;
+    border: 1.5px solid darkgrey;
+}
+
+form {
+    padding: 0% 5%;
+}
+
+.description-area {
+    font-size: 12px;
+    font-style: italic;
+}
+
+input[type=submit] {
+    border: 1.5px solid darkgrey;
+    float: right;
+    background-color: #d4d6d5;
+    height: 80px;
+    width: 200px;
+    font-weight: bold;
+}
+
+input[type=checkbox] {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#pro-description {
+    border: 1.5px solid darkgrey;
+}
+
+
+/* STEP 2 SECTION */
+
+.progress-2 {
+    width: 45%;
+    background-color: rgb(138, 129, 129);
+    height: 40px;
+}
+
+
+/* STEP 3 SECTION */
+
+.progress-3 {
+    width: 68%;
+    background-color: rgb(138, 129, 129);
+    height: 40px;
+}
+
+li {
+    float: left;
+    list-style: none;
+    margin-left: -45px;
+}
+
+figcaption p {
+    float: left;
+    text-align: right;
+    width: 13.5em;
+    padding-top: 0.5em;
+    margin-right: 0.5em;
+}
+
+
+/* STEP 4 SECTION */
+
+.progress-4 {
+    width: 90%;
+    background-color: rgb(138, 129, 129);
+    height: 40px;
+}
+
+.card-detail {
+    width: 40px;
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+}
